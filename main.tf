@@ -69,7 +69,7 @@ resource "aws_rds_instance" "three_tier" {
   instance_class = "db.t2.micro"
   engine = "mysql"
   name = "three_tier"
-  username = "root"
+  username = "username"
   password = "password"
   vpc_security_group_ids = [aws_security_group.data.id]
 }
